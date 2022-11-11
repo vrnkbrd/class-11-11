@@ -1,6 +1,6 @@
 # class-11-11
-Task 7kyu 
-The task
+### Task 7kyu 
+The task:
 You have to make a program capable of returning the sum of all the elements of a triangle with side of size n+1n+1n+1.
 
 The problem
@@ -16,21 +16,21 @@ ij
 ij
 ​
  =2j+i+1 where 0≤j≤i≤n0\leq j\leq i\leq n0≤j≤i≤n
-My solution
+#### My solution
 public class TriangleSum {
   public static long getSum(int m){
     long n = m + 1;
     return n * (n + 1) * (4 * n - 1) / 6;
   }
 }
-Fav solution:
+##### Fav solution:
 interface TriangleSum {
   static long getSum(long n) {
     return ++n * (4 * n - 1) * ++n / 6;
   }
 }
 
-Task 2 7 kyu 
+### Task 2 7 kyu 
 In a small town the population is p0 = 1000 at the beginning of a year. The population regularly increases by 2 percent per year and moreover 50 new inhabitants per year come to live in the town. How many years does the town need to see its population greater or equal to p = 1200 inhabitants?
 
 At the end of the first year there will be: 
@@ -57,7 +57,7 @@ nb_year(1500000, 2.5, 10000, 2000000) -> 10
 Note:
 Don't forget to convert the percent parameter as a percentage in the body of your function: if the parameter percent is 2 you have to convert it to 0.02.
 
-My solution: 
+#### My solution: 
 class Arge {
     
    public static int nbYear(int p0, double percent, int aug, int p) { 
@@ -69,7 +69,7 @@ class Arge {
     return years;
   }
 }
-Fav solution: 
+#### Fav solution: 
 class Arge {
     
     public static int nbYear(int p0, double percent, int aug, int p) {
